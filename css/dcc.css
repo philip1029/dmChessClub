@@ -1,0 +1,56 @@
+/*
+body {
+    background-image: url(../image/dcc_bg.png); 
+    background-repeat: repeat-x;
+    background-position: center top;
+    object-fit: none;
+    }
+*/
+
+body {
+    word-break:keep-all
+    }
+
+.layout {
+    width: 85%;
+    margin:0 auto;
+    font-size: 0.9rem;
+    }
+
+/*
+
+.layout {
+    position: absolute;
+    left: 144px;
+    right: 144px;
+    }
+
+*/
+
+.title {
+    text-align: center; 
+    font-size: 200%; 
+
+    position: relative;
+	z-index: 20;
+	display: table;
+	width: 100%;
+    background-repeat: repeat-x;
+    background-position: center top;
+    object-fit: none;
+
+    background-position: 50% 50%;
+	box-sizing: padding-box;
+    }
+
+.inform {
+    font-size: 150%;
+    }
+
+summary {
+    cursor: pointer;
+    }
+
+li {
+    line-height: 150%;
+    }
