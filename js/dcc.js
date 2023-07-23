@@ -1,5 +1,5 @@
 function start() {
-    let person = ["권오승", "장세녹", "정서율", "김민재", "박주호", "이필립", "이유은", "박민주", "장민정"];
+    let person = ["권오승", "장세녹", "정서율", "김민재(small)", "이필립", "이유은", "김민재(big)", "박지혁"];
     person.sort(() => Math.random() - 0.5);
     let n = person.length;
     for (let i = 0; i < Math.floor(n / 2); i++) {
