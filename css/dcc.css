@@ -1,56 +1,167 @@
-/*
-body {
-    background-image: url(../image/dcc_bg.png); 
-    background-repeat: repeat-x;
-    background-position: center top;
-    object-fit: none;
-    }
-*/
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
 
 body {
-    word-break:keep-all
-    }
-
-.layout {
-    width: 85%;
-    margin:0 auto;
+    word-break:keep-all;
     font-size: 0.9rem;
-    }
+}
 
-/*
+section {
+    width: 85%;
+	margin: 0 auto;
+}
 
-.layout {
-    position: absolute;
-    left: 144px;
-    right: 144px;
-    }
-
-*/
-
-.title {
-    text-align: center; 
-    font-size: 200%; 
-
-    position: relative;
-	z-index: 20;
-	display: table;
-	width: 100%;
-    background-repeat: repeat-x;
-    background-position: center top;
-    object-fit: none;
-
-    background-position: 50% 50%;
-	box-sizing: padding-box;
-    }
-
-.inform {
-    font-size: 150%;
-    }
+footer {
+    width: 95%;
+	margin: 0 auto;
+}
 
 summary {
     cursor: pointer;
-    }
+}
 
-li {
+
+header {
+	width: 85%;
+    margin: 0 auto;
+	}
+header .inner {
+	height: 120px;
+	margin: 0 auto;
+	position: relative;
+}
+header .inner h1 {
+	position: absolute;
+    left: 100px;
+    top: 22.5px;
+    font: bold 24px/1;
+	color: #444;
+}
+header .inner img {
+    position: absolute;
+    top: 20px;
+    
+}
+header .inner .util {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+header .inner .util li {
+	float: left;
+}
+header .inner ul {
+    list-style: none;
+}
+header .inner #gnb {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+header .inner #gnb li {
+	float: left;
+}
+
+@media (max-width: 1023px) {
+    .hidden-element {
+      display: none;
+    }
+  }
+header .inner button {
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+    color: #444;
+}
+header .inner .util li a button {
+	display: block;
+	font: 12px/1;
+	color: #999;
+}
+header .inner #gnb li button, header .inner #gnb li a {
+	display: block; /* 인라인 요소는 block을 설정해 크기 조절 가능 */
+	font: 15px/1;
+	color: #555;
+	padding: 15px 30px; /* 크기 */
+	transition: all 0.5s;
+}
+header .inner #gnb li button:hover, header .inner #gnb li a:hover {
+	background: #555;
+	color: #fff;
+}
+
+
+header .inner .util {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+header .inner .util li {
+	float: left;
+}
+header .inner .util li a {
+	display: block;
+	font: 12px/1;
+	color: #999;
+	padding: 0px 10px;
+}
+
+/*
+section a {
+    color: #000;
+}
+
+footer a {
+	color: #000;
+}
+*/
+
+footer .inner a, section .inner a {
+	display: block; /* 인라인 요소는 block을 설정해 크기 조절 가능 */
+	font: 15px/1;
+	color: #555;
+	padding: 15px 30px; /* 크기 */
+	transition: all 0.5s;
+}
+footer .inner a:hover, section .inner a:hover, section .inner button:hover {
+	background: #555;
+	color: #fff;
+}
+section .inner button {
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+    color: #444;
+    padding: 15px 30px;
+}
+/*
+.novel p{
+    font-size: 115%;
+	white-space: pre-wrap;
+
+    line-height: 2;
+}
+*/
+.green a {
+	color: #377E22
+}
+hr {
+	width: 100%;
+}
+
+
+/**/
+@media (prefers-color-scheme: dark) {
+	body, header .inner h1, section a, footer a  {
+	  background: #000;
+	  color: #fff;
+	}
+	footer .inner a, section .inner a, header .inner #gnb li button, header .inner #gnb li a, section .inner button {
+		color: #eee;
+	}
+  }
+section li {
     line-height: 150%;
     }

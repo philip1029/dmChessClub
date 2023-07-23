@@ -1,10 +1,3 @@
-function h1(str) {
-    document.write('<summary><b style="font-size: 200%;">' + str + '</b></summary>')
-}
-function h2(str) {
-    document.write('<summary><b style="font-size: 150%;">' + str + '</b></summary>')
-}
-
 function start() {
     let person = ["권오승", "장세녹", "정서율", "김민재", "박주호", "이필립", "이유은", "박민주", "장민정"];
     person.sort(() => Math.random() - 0.5);
@@ -22,4 +15,9 @@ function start() {
     alert("부전승: " + person[0]);
     //document.write("부전승: " + person[0]);
         }
-    }
+}
+
+function goToScroll(name) {
+    var location = document.querySelector("." + name).offsetTop;
+    window.scrollTo({top: location, behavior: 'smooth'});
+}
