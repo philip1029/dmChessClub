@@ -1,5 +1,5 @@
 function start() {
-    let person = ["권오승", "장세녹", "정서율", "김민재(small)", "이필립", "이유은", "김민재(big)", "박지혁"];
+    let person = ["권오승", "장세녹", "정서율", "김민재(small)", "이필립", "이유은", "김민재(big)", "박지혁", "장민정", "박민주", "박주호"];
     person.sort(() => Math.random() - 0.5);
     let n = person.length;
     for (let i = 0; i < Math.floor(n / 2); i++) {
@@ -16,6 +16,23 @@ function start() {
     //document.write("부전승: " + person[0]);
         }
 }
+
+function win()  {
+    const a = document.getElementById('a').value;
+    const b = document.getElementById('b').value;
+    const c = 1-(1 / ((10 ** ((Number(a) - Number(b)) / 400)) + 1));
+    document.getElementById("result1").innerText = Math.round((c) * 10000) / 100 + "%";
+    document.getElementById("result2").innerText = Math.round((1 - c) * 10000) / 100 + "%";
+
+    const k = 20
+    const d = document.querySelector('input[name="options"]:checked').value;
+    const e = Math.round(k * (d - c))
+    document.getElementById("result3").innerText = Number(a) + e;
+    const f = Math.round(k * (Math.abs(d - 1) - (1 - c)))
+    document.getElementById("result4").innerText = Number(b) + f;
+}
+
+//document.getElementById("result").innerText = "입력값에 오류가 있습니다.";
 
 function goToScroll(name) {
     var location = document.querySelector("." + name).offsetTop;

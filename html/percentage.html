@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>예상 레이팅 측정기</title>
+    <link rel="icon" href="../image/dcc_icon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../css/dcc.css" rel="stylesheet" type="text/css">
+    <style type="text/css"></style>
+</head>
+
+<body>
+    <script src="../js/dcc.js"></script>
+
+    <header>
+        <div class="inner">
+            <a href="..//index.html">
+                <img src="../image/dcc_icon.png" width="80" height="80">
+                <h1>예상 레이팅 측정기</h1>
+            </a>
+        </div>
+    </header>
+<hr>
+<br>
+    <section>
+        <div style="line-height: 200%">
+        <h1>예상 레이팅 측정기</h1>
+            A의 레이팅: <input id='a' onkeyup='win()'>,
+            <br>B의 레이팅: <input id='b' onkeyup='win()'>
+            <br>A의 예상 승률: <span id='result1'></span>
+            <br>B의 예상 승률: <span id='result2'></span>
+            <br>A의 경기 결과
+            <label>
+                <input type="radio" name="options" value=1 onclick="win()"> 승리
+            </label>
+            <label>
+                <input type="radio" name="options" value=0.5 onclick="win()"> 무승부
+            </label>
+            <label>
+                <input type="radio" name="options" value=0 onclick="win()"> 패배
+            </label>
+            <br>A의 경기 후 점수: <span id='result3'></span>
+            <br>B의 경기 후 점수: <span id='result4'></span>
+            <br><br>
+        </div>
+    </section>
+<hr>
+    <footer>
+    <details>
+        <summary>출처</summary>
+        <div class="green">
+            <a href="https://www.medford.k12.or.us/cms/lib/OR01915738/Centricity/Domain/2128/chessclub.png">대명중 체스 협회 아이콘</a><br>
+        </div>
+    </details>
+    <p>
+        made by 이필립
+    </p>
+    </footer>
+</body>
+</html>
