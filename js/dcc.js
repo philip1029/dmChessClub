@@ -24,7 +24,7 @@ function win()  {
     document.getElementById("result1").innerText = Math.round((c) * 10000) / 100 + "%";
     document.getElementById("result2").innerText = Math.round((1 - c) * 10000) / 100 + "%";
 
-    const k = 20
+    const k = 60
     const d = document.querySelector('input[name="options"]:checked').value;
     const e = Math.round(k * (d - c))
     document.getElementById("result3").innerText = Number(a) + e;
