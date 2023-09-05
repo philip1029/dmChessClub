@@ -27,9 +27,13 @@ function win()  {
     const k = 60
     const d = document.querySelector('input[name="options"]:checked').value;
     const e = Math.round(k * (d - c))
-    document.getElementById("result3").innerText = Number(a) + e;
+    var pm = ""
+    if (e > 0) {var pm = "+"}
+    document.getElementById("result3").innerText = String(Number(a) + e) + "("+pm+String(e)+")";
     const f = Math.round(k * (Math.abs(d - 1) - (1 - c)))
-    document.getElementById("result4").innerText = Number(b) + f;
+    var pm = ""
+    if (f > 0) {var pm = "+"}
+    document.getElementById("result4").innerText = String(Number(b) + f) + "("+pm+String(f)+")";
 }
 
 //document.getElementById("result").innerText = "입력값에 오류가 있습니다.";
